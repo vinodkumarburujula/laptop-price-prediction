@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laptop Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="card">
+        <h1>💻 Laptop Price Prediction</h1>
+        <p class="subtitle">
+            Predict laptop price using Brand, RAM & Storage
+        </p>
+
+        <!-- Brand -->
+        <label for="brand">Brand</label>
+        <select id="brand">
+            <option value="">Select Brand</option>
+            <option>Dell</option>
+            <option>HP</option>
+            <option>Lenovo</option>
+            <option>Apple</option>
+        </select>
+
+        <!-- RAM -->
+        <label for="ram">RAM Size (GB)</label>
+        <input type="number" id="ram" placeholder="e.g. 8">
+
+        <!-- Storage -->
+        <label for="storage">Storage Capacity (GB)</label>
+        <input type="number" id="storage" placeholder="e.g. 512">
+
+        <!-- Predict Button -->
+        <button onclick="predictPrice()">Predict Price</button>
+
+        <!-- Result -->
+        <div id="result" class="result-box">
+            Enter details and click Predict
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
